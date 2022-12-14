@@ -1,0 +1,3 @@
+C:/Users/grund/OneDrive - HTL Anichstrasse/Schule/FSST/2Kl/C_Kl2_HTLAnichstrasse/FSST_C/Kreiswanderung/cmake-build-debug/CMakeFiles/Kreiswanderung.dir
+C:/Users/grund/OneDrive - HTL Anichstrasse/Schule/FSST/2Kl/C_Kl2_HTLAnichstrasse/FSST_C/Kreiswanderung/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/grund/OneDrive - HTL Anichstrasse/Schule/FSST/2Kl/C_Kl2_HTLAnichstrasse/FSST_C/Kreiswanderung/cmake-build-debug/CMakeFiles/rebuild_cache.dir

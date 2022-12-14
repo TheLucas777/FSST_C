@@ -37,6 +37,14 @@ void Rechteck(int iStartZeile, int iStartSpalte, int iEndeZeile, int iEndeSpalte
 
 int main()
 {
-    Rechteck(5, 5, 10, 20, '*');
+    int iLoop = 1;
+    //while (iLoop < 10)
+    //{
+    //    Rechteck(10, 10, 20, 20, '*');
+    //    GotoZS(10, iLoop);
+    //    printf("#");
+    //    ClrScr();
+    //    iLoop++;
+    //}
     return 0;
 }
