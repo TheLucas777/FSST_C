@@ -3,4 +3,4 @@ project(fp C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(fp main.c)
+add_executable(fp main.c BildschirmRoutinen.h BildschirmRoutinen.c)
