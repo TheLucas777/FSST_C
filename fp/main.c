@@ -31,7 +31,7 @@ void FliegendesTeilchen (int iZeileOben,int iSpalteLinks,int iZeileUnten,int iSp
     iRichtungSpalte=1;
     iRichtungZeile=1;
 
-    for (;;)
+    for(;;)
     {
         iNeueZeile=iZeile+iRichtungZeile;
         iNeueSpalte=iSpalte+iRichtungSpalte;
