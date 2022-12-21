@@ -17,37 +17,45 @@ void Anzeigen(int iZeile, int iSpalte, char cZeichen, int iDelay)
 }
 
 
-void FliegendesTeilchen(int iZeileOben, int iSpalteLinks, int iZeileUnten, int iSpalteRechts, char cZeichen, int iDelay)
+void FliegendesTeilchen (int iZeileOben,int iSpalteLinks,int iZeileUnten,int iSpalteRechts,char cZeichen,int iDelay)
 {
-    //Variablen Intitialisieren
     int iZeile;
     int iSpalte;
+    int iNeueZeile;
     int iNeueSpalte;
+    int iRichtungZeile;
     int iRichtungSpalte;
 
-    //Variablen füllen
-    iZeile = (iZeileOben+iZeileUnten)/2;
-    iSpalte = (iSpalteLinks+iSpalteRechts)/2;
-    iRichtungSpalte = 1;
+    iZeile=(iZeileOben+iZeileUnten)/2;
+    iSpalte=(iSpalteLinks+iSpalteRechts)/2;
+    iRichtungSpalte=1;
+    iRichtungZeile=1;
 
-
-    for(;;)
+    for (;;)
     {
-        iNeueSpalte = iSpalte+iRichtungSpalte;
+        iNeueZeile=iZeile+iRichtungZeile;
+        iNeueSpalte=iSpalte+iRichtungSpalte;
 
-        if((iSpalteLinks < iNeueSpalte) && (iNeueSpalte < iSpalteRechts))
+        if (  (iZeileOben<iNeueZeile) && (iNeueZeile<iZeileUnten))
         {
-            //im erlaubten Bereich
-
-            //Neue Spalte übernehmen
-            iSpalte = iNeueSpalte;
+            // im erlaubten Bereich
+            iZeile=iNeueZeile;
         }
         else
         {
-            //nicht im erlaubten Bereich
+            // nicht im erlaubten Bereich
+            iRichtungZeile=-iRichtungZeile;
+        }
 
-            //Richtung ändern
-            iRichtungSpalte =- iRichtungSpalte;
+        if (  (iSpalteLinks<iNeueSpalte) && (iNeueSpalte<iSpalteRechts))
+        {
+            // im erlaubten Bereich
+            iSpalte=iNeueSpalte;
+        }
+        else
+        {
+            // nicht im erlaubten Bereich
+            iRichtungSpalte=-iRichtungSpalte;
         }
 
         Anzeigen(iZeile,iSpalte,cZeichen,iDelay);
